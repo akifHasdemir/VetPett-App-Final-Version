@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #DDDDDD;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vetApplication.VetProfileController">
+   <children>
+      <VBox prefHeight="600.0" prefWidth="250.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="250.0">
+               <children>
+                  <Label text="VetPet">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="70.0" top="70.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Label text="Clinic Name:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="clinicName" prefHeight="26.0" prefWidth="217.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Clinic Address:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="clinicAddress" prefHeight="73.0" prefWidth="208.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextArea>
+            <Label text="City:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="city">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="District:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="distric">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Bio:">
+               <font>
+                  <Font size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="bio" prefHeight="107.0" prefWidth="254.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+      <VBox layoutX="250.0" prefHeight="600.0" prefWidth="550.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="37.0" prefWidth="123.0" text="My Profile">
+                     <HBox.margin>
+                        <Insets left="25.0" top="25.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Button mnemonicParsing="false" onAction="#updateProfile" prefHeight="46.0" prefWidth="132.0" text="Update Profile">
+                     <HBox.margin>
+                        <Insets left="200.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <Pane prefHeight="500.0" prefWidth="550.0">
+               <children>
+                  <VBox prefHeight="500.0" prefWidth="300.0">
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #CCCCCC; -fx-border-radius: 10PX;">
+                           <VBox.margin>
+                              <Insets top="125.0" />
+                           </VBox.margin>
+                           <children>
+                              <Label text="Clinic Name:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="clinicNameLabel" text="Null">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #CCCCCC; -fx-border-radius: 50PX;">
+                           <children>
+                              <Label text="Clinic Address:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="clinicAddressLabel" text="Null">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #CCCCCC; -fx-border-radius: 10PX;">
+                           <children>
+                              <Label text="City:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="clinicCityLabel" text="Null">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="30.0" prefWidth="300.0" style="-fx-background-color: #CCCCCC; -fx-border-radius: 10PX;">
+                           <children>
+                              <Label text="District:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="clinicDistrictLabel" text="Null">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="300.0" style="-fx-background-color: #CCCCCC; -fx-border-radius: 10PX;">
+                           <children>
+                              <Label text="Bio:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="clinicBioLabel" text="Null">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="300.0" prefHeight="500.0" prefWidth="250.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#goToVetHomePage" text="Vet Home Page">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="200.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

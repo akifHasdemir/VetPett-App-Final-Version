@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="loginPage.LoginPageController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox layoutX="40.0" layoutY="50.0" prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <Label prefHeight="35.0" prefWidth="235.0" text="Welcome To VetPet">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <Label text="UserName:" />
+            <TextField fx:id="userNameTF" promptText="please type your userName" />
+            <Label text="Password:" />
+            <TextField fx:id="passwordTF" promptText="please type your password" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button onAction="#login" mnemonicParsing="false" prefHeight="64.0" prefWidth="100.0" text="Log In" />
+                  <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="168.0">
+                     <children>
+                        <Label prefHeight="25.0" prefWidth="142.0" text="Don't you have an account">
+                           <VBox.margin>
+                              <Insets top="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Button onAction="#register" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" text="Register" />
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
